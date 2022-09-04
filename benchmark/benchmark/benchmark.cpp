@@ -1,8 +1,8 @@
-﻿#include "raylib.h"
+#include "raylib.h"
 #include "raymath.h"
 #include "global.h"
-#include <chrono> // std::chrono::microseconds
-#include <thread> // std::this_thread::sleep_for
+#include <chrono>
+#include <thread> 
 #include <vector>
 #include <string>
 #include <fstream>
