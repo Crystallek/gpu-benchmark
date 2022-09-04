@@ -59,8 +59,8 @@ int main(void)
     Model cube = LoadModelFromMesh(GenMeshCube(2.0f, 4.0f, 2.0f));
 
 
-    Shader shader = LoadShader(TextFormat("C:/Users/simon/source/repos/benchmark/benchmark/base_lighting.vs", GLSL_VERSION),
-        TextFormat("C:/Users/simon/source/repos/benchmark/benchmark/lighting.fs", GLSL_VERSION));
+    Shader shader = LoadShader(TextFormat("base_lighting.vs", GLSL_VERSION),
+        TextFormat("lighting.fs", GLSL_VERSION));
     shader.locs[SHADER_LOC_VECTOR_VIEW] = GetShaderLocation(shader, "viewPos");
     
     int ambientLoc = GetShaderLocation(shader, "ambient");
